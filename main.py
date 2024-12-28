@@ -37,6 +37,7 @@ def main():
         dt = clock.tick(60) / 1000
         for u in updatable:
             u.update(dt)
+            print(f"{player1.shot_timer}")
         for a in asteroids:
             if a.check_collisions(player1):
                 print("Game over!")
